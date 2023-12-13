@@ -1,6 +1,6 @@
 
 button {
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid transparent;
     padding: 0.6em 1.2em;
     font-size: 1em;
@@ -19,7 +19,7 @@ button {
   }
 
   .input{
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 8px 9px 8px rgba(0, 0, 0, 0.1);
   }
@@ -27,9 +27,8 @@ button {
   .ps{
     color: black;
     background-color: white;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    border-radius: 50px;
+    padding: 10px;
     box-shadow: 8px 9px 8px rgba(0, 0, 0, 0.1);
     
   }
