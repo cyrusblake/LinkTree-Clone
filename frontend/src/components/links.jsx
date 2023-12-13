@@ -37,22 +37,25 @@ export default function Links() {
         <input className="input"  type="text" value={link} onChange={(e) => setLink(e.target.value)} placeholder="URL"/>
       </section>
       <section >
- 
             <p className="ps">
                 LinkTree Clone
                 <br/>
                 <a className="c-link" href="https://github.com/cyrusblake/LinkTree-Clone">https://github.com/cyrusblake/LinkTree-Clone</a>
             </p>
-         
       </section>
       <section>
-       
             <p className="ps">
                 Linkedin
                 <br/>
                 <a className="c-link" href="https://www.linkedin.com/in/cyrus-blake-10b8001a9/">https://www.linkedin.com/in/cyrus-blake-10b8001a9/</a>
             </p>
-          
+      </section>
+      <section>
+            <p className="ps">
+                Portfolio
+                <br/>
+                <a className="c-link" href="https://cyrusblakeportfolio.vercel.app/">https://cyrusblakeportfolio.vercel.app/</a>
+            </p>
       </section>
       <section>
             <p className="ps">
