@@ -33,7 +33,8 @@ export default function Links() {
             Add New Link
         </button>
         <br/>
-        <input className="input" type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" />
+        <input  className="input" type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" />
+        
         <input className="input"  type="text" value={link} onChange={(e) => setLink(e.target.value)} placeholder="URL"/>
       </section>
       <section >
