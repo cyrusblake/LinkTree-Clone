@@ -20,10 +20,15 @@ button {
     border-radius: 5px;
   }
 
-
   .ps{
     color: black;
     background-color: white;
     border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
+
+  .c-link{
+    color:blueviolet
+  }
