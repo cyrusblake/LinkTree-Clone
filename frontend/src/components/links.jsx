@@ -36,7 +36,7 @@ export default function Links() {
         <input className="input" type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" />
         <input className="input"  type="text" value={link} onChange={(e) => setLink(e.target.value)} placeholder="URL"/>
       </section>
-      {/* <section >
+      <section >
  
             <p className="ps">
                 LinkTree Clone
@@ -60,7 +60,7 @@ export default function Links() {
                 <br/>
                 <a className="c-link" href="https://github.com/cyrusblake">https://github.com/cyrusblake</a>
             </p>
-      </section> */}
+      </section>
       <section>
         {links.map((result) => (
         <div key={result.id}>
