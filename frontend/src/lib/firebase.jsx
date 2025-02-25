@@ -25,6 +25,7 @@ export const signInWithGoogle = async () => {
     const result = await signInWithPopup(auth, provider);
     const user = result.user;
     window.alert(`Signed in with ${user.email}`);
+    window.location.reload();
   } catch (e) {
     window.alert(e.message);
   }

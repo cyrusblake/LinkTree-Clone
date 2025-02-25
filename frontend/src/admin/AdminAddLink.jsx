@@ -26,6 +26,7 @@ export default function AdminAddLink() {
             }
             await setLinkDoc(linkName, linkUrl, user.email);
             window.alert('Link added successfully');
+            window.location.reload();
             setLinkName('');
             setLinkUrl('');
         } catch (e) {
