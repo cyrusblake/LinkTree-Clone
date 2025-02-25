@@ -101,7 +101,8 @@ export default function Links() {
               <a className="c-link" href={link.linkID}>
                 {link.linkID}
               </a>
-              <button onClick={() => handleDelete(link.linkID)}>D</button>
+{/*               
+              <button onClick={() => handleDelete(link.linkID)}>D</button> */}
             </p>
           </div>
         ))}
