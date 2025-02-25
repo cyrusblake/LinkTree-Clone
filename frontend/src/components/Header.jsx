@@ -1,6 +1,6 @@
 import { signInWithGoogle, signOutFromGoogle } from '../lib/firebase';
 import { Link } from 'react-router-dom';
-import './Header.css';
+import './header.css';
 import useAuth from '../lib/useAuth';
 
 export default function Header() { 
