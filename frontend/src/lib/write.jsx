@@ -1,4 +1,4 @@
-import { getFirestore, doc, deleteDoc, collection, getDocs  } from 'firebase/firestore';
+import { getFirestore, doc, deleteDoc, collection, getDocs, setDoc  } from 'firebase/firestore';
 import { db } from './firebase';
 
 export const setLinkDoc = (linkName, linkID, userID) => {
