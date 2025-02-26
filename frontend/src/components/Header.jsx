@@ -7,7 +7,7 @@ export default function Header() {
     
     return (
         <header className='header'>
-            <Link to="/">LTM</Link>
+            <Link to="/">LTC</Link>
             {!loading && (
                 <button 
                     type='button'
