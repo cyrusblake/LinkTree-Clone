@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { getLinks } from "../lib/reads";
-// import { deleteLinkDoc } from "../lib/write";
-import { deleteDocument } from "../lib/write";
 import useAuth from "../lib/useAuth";
 import AdminAddLink from "../admin/AdminAddLink";
+import { deleteDocument } from "../lib/delete";
+// import { db } from "../lib/firebase";
+// import { deleteDoc, doc } from "firebase/firestore";
 
 
 export default function Links() {
@@ -52,17 +53,15 @@ export default function Links() {
     }
   }, [loading, user]);
 
-  
-
   const handleDelete = async (linkID) => {
-   
     try {
-      await deleteDocument(cName, linkID);
-      setTLinks(tlinks.filter(link => link.linkID !== linkID));
+      await deleteDocument(linkID);
+      setTLinks(tlinks.filter(link => link.id !== linkID));
     } catch (error) {
       console.error("Error deleting link: ", error);
     }
   };
+  
 
 
 
@@ -101,8 +100,8 @@ export default function Links() {
               <a className="c-link" href={link.linkID}>
                 {link.linkID}
               </a>
-{/*               
-              <button onClick={() => handleDelete(link.linkID)}>D</button> */}
+              &emsp;
+              <button onClick={() => handleDelete(link.id)}>D</button>
             </p>
           </div>
         ))}
