@@ -47,7 +47,7 @@ export default function Links() {
   useEffect(() => {
     if (!loading && user) {
       getLinks().then((result) => {
-        const userLinks = result.filter(link => link.userID === user.email);
+        const userLinks = result.filter(link => link.userUID === user.uid);
         setTLinks(userLinks);
       });
     }
