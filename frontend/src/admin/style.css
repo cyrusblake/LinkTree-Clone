@@ -1,0 +1,10 @@
+
+.tp{
+    color: white;
+    text-decoration: none;   
+}
+
+
+a.tp:visited {
+    color: white;
+}

@@ -2,6 +2,7 @@
 import useAuth from '../lib/useAuth';
 import { setLinkDoc } from '../lib/write';
 import { useState } from 'react';
+import '../admin/style.css';
 
 
 

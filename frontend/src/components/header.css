@@ -8,3 +8,12 @@
     display: flex;
     justify-content: space-between;
 }
+
+.lb {
+    color:white;
+    text-decoration: none;
+}
+
+a.lb:visited {
+    color: white;
+}

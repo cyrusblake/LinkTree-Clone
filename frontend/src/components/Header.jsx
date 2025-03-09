@@ -11,7 +11,7 @@ export default function Header() {
             {!loading && (
                 <button 
                     type='button'
-                    className=''
+                    className='lb'
                     onClick={user ? signOutFromGoogle : signInWithGoogle}
                 >
                     Log {user ? 'out' : 'in'}
