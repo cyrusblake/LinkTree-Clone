@@ -3,6 +3,7 @@ import { getLinks } from "../lib/reads";
 import useAuth from "../lib/useAuth";
 import AdminAddLink from "../admin/AdminAddLink";
 import { deleteDocument } from "../lib/delete";
+import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
 // import { db } from "../lib/firebase";
 // import { deleteDoc, doc } from "firebase/firestore";
 
@@ -101,7 +102,9 @@ export default function Links() {
                 {link.linkID}
               </a>
               &emsp;
-              <button onClick={() => handleDelete(link.id)}>D</button>
+              <button onClick={() => handleDelete(link.id)}>
+                <DeleteRoundedIcon/>
+              </button>
             </p>
           </div>
         ))}

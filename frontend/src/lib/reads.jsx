@@ -13,10 +13,13 @@ export const getLinks = async () => {
     );
 };
 
-export const getLinksFromLinkID = async (linkID) => {
-    return (await getDocs(doc(db, 'links', linkID))).data();
-};
+
+
+// export const getLinksFromLinkID = async (linkID) => {
+//     return (await getDocs(doc(db, 'links', linkID))).data();
+// };
 
 export const userIsAdmin = async (uid) => {
     return (await getDocs(doc(db, 'admins', uid))).exists();
 };
+
